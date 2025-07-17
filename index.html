@@ -9,6 +9,10 @@
         /* комментарий в CSS (style) */
 
         /* задаём стили по тегам */
+        body{
+            background: #7cffc8;
+            /* font-size: 43px; */
+        }
         h2{
             /* цвет текста */
             color: #ff7809;
@@ -22,6 +26,26 @@
             font-size: 23px;
             background: palevioletred;
         }
+        p{
+            /* background: rgb(77, 107, 255); */
+        }
+        
+        
+        
+        
+        .num1{
+            background: rgb(216, 202, 112);
+        }
+        .num2{
+            font-size: 23px;
+            color: darkred;
+        }
+        
+        
+        #test_id{
+            color: #015a80;
+            background: #fff;
+        }
     </style>
 </head>
 
@@ -31,7 +55,7 @@
     wrrerree
 
     <!-- закрывающиися теги от <h1> до <h6> - заголовки -->
-    <h1>
+    <h1 id="test_id">
         text 1
     </h1>
     <h2>
@@ -40,7 +64,7 @@
     <h3>
         text 3
     </h3>
-    <h4>
+    <h4 style="color: #8eecff; background-color: #ff7809;">
         text 4
     </h4>
     <h5>
@@ -84,13 +108,36 @@
     <!-- незакрывающийся тег <hr> - переносит текст и создаёт линию -->
     <hr>
     start_2
-    <p>
+    <p class="num1" style="background: #ac09ff;">
         
         end_2
     </p>
 
+    &#10046;
+
+
+
+    <span class="num1 num2">
+        text
+    </span>
+    <div class="num2">
+        1234
+    </div>
+
+
+
+    <p>
+        <a href="#test_id">
+            link to id
+        </a>
+    </p>
+    <p>
+        <a href="lesson_1_list.html">
+            lesson 1 list
+        </a>
+    </p>
+
     
-    &lt;hr>
 
 </body>
 
