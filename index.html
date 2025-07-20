@@ -9,11 +9,12 @@
         /* комментарий в CSS (style) */
 
         /* задаём стили по тегам */
-        body{
+        body {
             background: #7cffc8;
             /* font-size: 43px; */
         }
-        h2{
+
+        h2 {
             /* цвет текста */
             color: #ff7809;
             /* расположение текста */
@@ -21,28 +22,31 @@
             /* цвет фона */
             background-color: rgb(157, 255, 0);
         }
-        p{
+
+        p {
             /* размер текста */
             font-size: 23px;
             background: palevioletred;
         }
-        p{
+
+        p {
             /* background: rgb(77, 107, 255); */
         }
-        
-        
-        
-        
-        .num1{
+
+
+
+        /* меняем стили через class */
+        .num1 {
             background: rgb(216, 202, 112);
         }
-        .num2{
+        .num2 {
             font-size: 23px;
             color: darkred;
         }
         
         
-        #test_id{
+        /* меняем стили через id*/
+        #test_id {
             color: #015a80;
             background: #fff;
         }
@@ -102,42 +106,48 @@
     <!-- незакрывающийся тег <br> - переносит текст -->
     <br>
     end
-    
 
-    
+
+
     <!-- незакрывающийся тег <hr> - переносит текст и создаёт линию -->
     <hr>
     start_2
-    <p class="num1" style="background: #ac09ff;">
-        
-        end_2
-    </p>
 
+
+    <!-- спецсимволы - HTML -->
     &#10046;
 
 
 
+    <!-- создаем класс для стилей -->
     <span class="num1 num2">
         text
     </span>
-    <div class="num2">
-        1234
+    <div class="num2"></div>
+    1234
     </div>
 
+    <!-- приоритет стилей -->
+    <p class="num1" style="background: #ac09ff;">
+        end_2
+    </p>
 
 
+
+    <!-- ссылка на элемент -->
     <p>
         <a href="#test_id">
             link to id
         </a>
     </p>
+    <!-- ссылка на другую страницу -->
     <p>
         <a href="lesson_1_list.html">
             lesson 1 list
         </a>
     </p>
 
-    
+
 
 </body>
 
