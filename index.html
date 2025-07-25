@@ -21,6 +21,8 @@
             text-align: center;
             /* цвет фона */
             background-color: rgb(157, 255, 0);
+
+            margin: 0;
         }
 
         p {
@@ -39,16 +41,52 @@
         .num1 {
             background: rgb(216, 202, 112);
         }
+
         .num2 {
             font-size: 23px;
             color: darkred;
         }
-        
-        
+
+
         /* меняем стили через id*/
         #test_id {
             color: #015a80;
             background: #fff;
+        }
+
+
+
+        .all_frames {
+            background-color: #e2ca2b;
+            border: #000 5px solid;
+            /* border-color: #ac09ff; */
+            /* border-width: 10px; */
+            /* border-style: dashed; */
+
+            /* border-left-width:10px; */
+            border-width: 5px 10px 15px 20px;
+            border-style: groove dotted double solid;
+            border-color: #ac09ff #fffb09 #09ff78 #2209ff;
+            /* border-color: #ac09ff #fffb09 #09ff78; */
+            /* border-color: #ac09ff #fffb09; */
+
+
+            padding: 10px;
+            padding: 10px 20px;
+            /* padding-top: 60px; */
+
+
+            margin: 15px;
+
+
+            border-radius:10px;
+            border-top-left-radius:30px;
+            border-radius:10px 20px;
+
+
+
+            width: 100px;
+            height: 50px;
         }
     </style>
 </head>
@@ -59,36 +97,36 @@
     wrrerree
 
     <!-- закрывающиися теги от <h1> до <h6> - заголовки -->
-    <h1 id="test_id">
-        text 1
+    <h1 id="test_id" style="margin: 0;">
+        title 1
     </h1>
     <h2>
-        text 2
+        title 2
     </h2>
     <h3>
-        text 3
+        title 3
     </h3>
     <h4 style="color: #8eecff; background-color: #ff7809;">
-        text 4
+        title 4
     </h4>
     <h5>
-        text 5
+        title 5
     </h5>
     <h6>
-        text 6
+        title 6
     </h6>
 
 
 
     <!-- закрывающийся тег <div> - блок выделяет текст во всю ширину страницы -->
-    <div>
+    <div class="all_frames">
         div text
     </div>
 
 
-
+    
     <!-- закрывающийся тег <span> - блок обтекает текст -->
-    <span>
+    <span class="all_frames">
         span text
     </span>
 
