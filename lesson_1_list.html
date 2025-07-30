@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-size: 24px;
+            background-color: rgb(132, 255, 214);
+        }
         .list_1{
             /* меняем точки списка на другие символы */
             /* list-style-type: square;
@@ -17,6 +21,62 @@
         .list_2{
             /* меняем точки списка на фото */
             list-style-image: url(hleb_61g1hd5qb0l4_32.png);
+        }
+
+
+        .text_1{
+            /* размер текста */
+            font-size: 20px;
+        }
+        .text_2{
+            /* вид написания текста */
+            font-style: oblique;
+        }
+        .text_3{
+            /* толщина текста */
+            font-weight:900;
+        }
+        .text_4{
+            /* меняем шрифт */
+            /* font-family: cursive; */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        
+        /* подключаем свой шрифт */
+        @font-face{
+            src: url(Minecraft_1.1.ttf);
+            font-family: mine;
+        }
+        .text_5{
+            /* устанавливаем подключённый шрифт */
+            font-family: mine;
+            /* font-style: oblique; */
+            /* font-weight: 700; */
+        }
+        .text_6{
+            /* Подчеркивание текста */
+
+            /* высота линии */
+            /* overline - верхняя линия
+            line-through - средняя линия
+            underline - нижняя линия */
+            text-decoration-line:overline;
+            
+
+            /* вид линии */
+            /* solid — обычная сплошная линия
+            double — двойная линия
+            dotted — пунктирная линия (пунктир из точек)
+            dashed — тоже пунктирная линия, но пунктир из коротких линий
+            wavy — волнистая линия */
+            /* text-decoration-style: wavy; */
+            
+
+            /* цвет линии */
+            /* text-decoration-color: blue; */
+            
+            
+            text-decoration: line-through wavy red;
         }
     </style>
 </head>
@@ -31,7 +91,9 @@
 
     <!-- ul - список с точками -->
     <ul>
-        <li>hello (ul) 1</li>
+        <div>
+            <li>hello (ul) 1</li>
+        </div>
         <li>hello (ul) 2</li>
         <li>hello (ul) 3</li>
         <li>hello (ul) 4</li>
@@ -83,6 +145,30 @@
             <li>hello (ul) 3</li>
             <li>hello (ul) 4</li>
         </ul>
+
+
+<hr>
+
+<p class="text_1">
+    text 1
+</p>
+<p class="text_2">
+    text 2
+</p>
+<p class="text_3">
+    text 3
+</p>
+<p class="text_4">
+    text 4
+</p>
+<p class="text_5">
+    text 5
+</p>
+<p class="text_6">
+    text 6
+</p>
+
+
 </body>
 
 </html>
