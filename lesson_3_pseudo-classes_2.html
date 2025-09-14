@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* меняем всех */
+        .list_div {
+            background-color: aquamarine;
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+            margin: 15px;
+        }
+
+        /* меняем первого ребенка */
+        /* .list_div:first-child{
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+            } */
+
+        /* меняем последнего ребенка */
+        /* .list_div:last-child{
+            background-color: rgb(184, 0, 0);
+            color: rgb(152, 255, 164);
+            } */
+
+        /* меняем ребенка по номеру (3) */
+        /* .list_div:nth-child(3) {
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+        } */
+        
+        /* меняем всех четных детей */
+        /* .list_div:nth-child(even) {
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+        } */
+        
+        /* меняем всех нечётных детей */
+        /* .list_div:nth-child(odd) {
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+        } */
+        
+        /* меняем каждого третьего ребенка */
+        /* .list_div:nth-child(3n) {
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+        } */
+
+        /* меняем каждого третьего ребенка , счёт идёт со второго */
+        .list_div:nth-child(3n + 2) {
+            background-color: rgb(119, 0, 184);
+            color: rgb(152, 255, 164);
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">
+            назад
+        </a>
+    </p>
+    <!-- <div class="list_div"> -->
+    <div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+        <div class="list_div">текст div</div>
+    </div>
+    <span class="list_div">
+        text span
+    </span>
+</body>
+
+</html>

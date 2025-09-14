@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* чтобы тег img работал ему нужно указать ширину или высоту */
+        img{
+            width: 300px;
+        }
+        div{
+            /* делаем картинку фоном */
+            /* background: url("a2.jpg"); */
+            
+            /* фон картинка повторяется по x */
+            /* background: url("a2.jpg") repeat-x; */
+
+            /* no-repeat картинка становится только одна */
+            /* позиционировануем и меняем размер картинки фона */
+            /* background: url("a3.jpg")no-repeat 20% 100%/60%; */
+
+            /* делаем картинку по центру и на весь размер тега */
+            /* background: url("a3.jpg")no-repeat center/cover; */
+
+            /* Отдельно меняем repeat */
+            /* background-repeat: space; */
+
+            /* делаем две картинки фоном */
+            background: url("a1.png") , url("a3.jpg");
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+        <p>
+        <a href="index.html">
+            назад
+        </a>
+    </p>
+
+    <!-- вставляем фтот через тег img 
+   src = указываем путь к файлу
+   alt = надпись если фото не получилось загрузить -->
+    <img src="a2.jpg" alt="кот">
+    <img src="a3.jpg">
+
+   <!-- вставляем фото в любой закрывающийся тег -->
+    <div>
+        9994994
+    </div>
+</body>
+</html>
