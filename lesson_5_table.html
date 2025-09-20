@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 30px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid #000;
+            /* margin: 10px; */
+            padding: 3px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- colspan
+            rowspan
+        -->
+        <tr>
+            <td>
+                1
+            </td>
+            <td colspan="2">
+                2
+            </td>
+            <!-- <td>
+                3
+            </td> -->
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+            <td>
+                5
+            </td>
+            <td rowspan="2">
+                6
+            </td>
+        </tr>
+        <tr>
+            <td>
+                7
+            </td>
+            <td>
+                8
+            </td>
+            <!-- <td>
+                9
+            </td> -->
+        </tr>
+    </table>
+
+
+
+
+    <table style="width: 600px;">
+        <caption>
+            super table
+        </caption>
+        <thead>
+            <tr>
+                <td style="border: 4px solid #000 ;" colspan="2">
+                    цифры
+                </td>
+                <td style="border: 4px solid #000 ;">
+                    см
+                </td>
+                <td style="border: 4px solid #000 ;">
+                    кг
+                </td>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    0.1
+                </td>
+                <td colspan="2">
+                    2
+                </td>
+                <!-- <td>
+                    3
+                </td> -->
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    0.2
+                </td>
+                <td>
+                    5
+                </td>
+                <td rowspan="2">
+                    6
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                </td>
+                <td>
+                    0.3
+                </td>
+                <td>
+                    8
+                </td>
+                <!-- <td>
+                    9
+                </td> -->
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    итог:
+                </td>
+                <td>
+                    277
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div style="width: 100px; height: 100px; background-color: blueviolet; margin: 0 auto;">
+        
+    </div>
+</body>
+
+</html>
