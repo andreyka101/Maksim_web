@@ -8,6 +8,7 @@
     <style>
         table {
             font-size: 30px;
+            /* убираем отступы между ячеек в таблице */
             border-collapse: collapse;
         }
 
@@ -20,14 +21,19 @@
 </head>
 
 <body>
+    <!-- LINK - пример таблицы 1 -->
+    <!-- TODO - table - таблица -->
     <table>
-        <!-- colspan
-            rowspan
-        -->
+        <!-- TODO - tr - строка таблицы -->
         <tr>
+            <!-- TODO - td - ячейка таблицы -->
             <td>
                 1
             </td>
+            <!-- 
+                colspan=" количество занимаемых ячеек по горизонтали "
+                rowspan=" количество занимаемых ячеек по вертикали "
+            -->
             <td colspan="2">
                 2
             </td>
@@ -58,14 +64,22 @@
             </td> -->
         </tr>
     </table>
-
-
-
-
+    
+    
+    
+    
+    
+    <!-- LINK - пример таблицы 2 -->
+    <!-- 
+        colspan=" количество занимаемых ячеек по горизонтали "
+        rowspan=" количество занимаемых ячеек по вертикали "
+    -->
     <table style="width: 600px;">
+        <!-- TODO - caption - название таблицы -->
         <caption>
             super table
         </caption>
+        <!-- TODO - thead - шапка таблицы -->
         <thead>
             <tr>
                 <td style="border: 4px solid #000 ;" colspan="2">
@@ -79,7 +93,8 @@
                 </td>
             </tr>
         </thead>
-        <tbody >
+        <!-- TODO - tbody - тело таблицы -->
+        <tbody>
             <tr>
                 <td>
                     1
@@ -124,6 +139,7 @@
             </tr>
 
         </tbody>
+        <!-- TODO - tfoot - низ таблицы -->
         <tfoot>
             <tr>
                 <td colspan="3">
@@ -136,9 +152,7 @@
         </tfoot>
     </table>
 
-    <div style="width: 100px; height: 100px; background-color: blueviolet; margin: 0 auto;">
-        
-    </div>
+    <div style="width: 100px; height: 100px; background-color: blueviolet; margin: 0 auto;"></div>
 </body>
 
 </html>
