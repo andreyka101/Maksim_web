@@ -1,30 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box_1{
+        body {
+            font-size: 25px;
+        }
+
+        .box_1 {
             /* display: inline; */
             /* display: block; */
             display: inline-block;
         }
+
+        .flex_n1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex_n2 {
+            display: flex;
+            flex-wrap: wrap;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.301);
+        }
+
+        .flex_n3 {
+            /* display: flex; */
+            display: inline-flex;
+            margin-top: 50px;
+        }
+
+        .flex_n4 {
+            display: inline-flex;
+        }
     </style>
 </head>
+
 <body>
     <div style="background-color: blue;">
-        eff
+        <!-- display: inline - создан только для текста -->
+        inline
+        <br>
+        101010101010101
     </div>
     <span style="background-color: rgb(17, 255, 0);">
-        244
+        <!-- display: block - создан только для блоков -->
+        block
+        <br>
+        101010101010101
     </span>
     <p>
         <span class="box_1" style="background-color: rgb(255, 0, 93);">
-            duuwdwd
+            <!-- display: inline-block - создан для обтекания блоков и текста -->
+            inline-block
             <br>
-            5635463644
+            101010101010101
         </span>
     </p>
+
+
+
+    <p style=" margin-top: 60px;">
+        <!-- display: flex - создан для позиционирования блоков -->
+        display flex - создан для позиционирования блоков
+    </p>
+    <div class="flex_n1">
+        <span style="background-color: rgb(102, 255, 0);">
+            1
+        </span>
+        <span style="background-color: rgb(255, 230, 0);">
+            2
+        </span>
+        <span style="background-color: rgb(255, 0, 0);">
+            3
+        </span>
+        <span style="background-color: rgb(13, 0, 255);">
+            4
+        </span>
+    </div>
+    <div class="flex_n2">
+        <div style="background-color: rgb(102, 255, 0); height: 200px; width: 350px;">
+            1
+        </div>
+        <div style="background-color: rgb(255, 230, 0); height: 200px; width: 350px;">
+            2
+        </div>
+        <div style="background-color: rgb(255, 0, 0); height: 200px; width: 350px;">
+            3
+        </div>
+        <div style="background-color: rgb(13, 0, 255); height: 200px; width: 350px;">
+            4
+        </div>
+    </div>
+
+
+
+    <p style=" margin-top: 60px;">
+        <!-- display: inline-flex - создан для обтикаемого позиционирования блоков -->
+        display inline-flex - создан для обтикаемого позиционирования блоков
+    </p>
+    <div class="flex_n3">
+        <div style="background-color: rgb(102, 255, 0); height: 200px; width: 350px;">
+            1
+        </div>
+        <div style="background-color: rgb(255, 230, 0); height: 200px; width: 350px;">
+            2
+        </div>
+        <div style="background-color: rgb(255, 0, 0); height: 200px; width: 350px;">
+            3
+        </div>
+        <div style="background-color: rgb(13, 0, 255); height: 200px; width: 350px;">
+            4
+        </div>
+    </div>
+
+
+
+    <div class="flex_n4">
+        <span>text1</span>
+        <span>text2</span>
+        <span>text3</span>
+    </div>
+
+
+
+    <p style=" margin-top: 60px;">
+        <!-- display: none - ничего -->
+        display none - ничего
+    </p>
+    <div style="display: none;">
+        text
+    </div>
 </body>
+
 </html>
