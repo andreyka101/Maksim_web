@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* transform: scale(0.5 ,1.6); */
+        }
+
+
+        img{
+            width: 500px;
+            border: 5px #000 solid;
+
+
+            /* transform: scale(0.7); */
+            /* transform: scale(0.5 ,1.6); */
+            transform: scaleZ(5);
+            
+
+            /* transform: rotate(40deg); */
+            /* transform: rotateX(290deg); */
+            transform: rotateY(290deg);
+            /* transform: rotate3d(0 , 1 , 0.5 , 45deg); */
+
+
+            transform-origin: top right;
+            /* transform-origin: top center; */
+            /* transform-origin: 400px 200px; */
+
+            /* transform: skew(45deg, 10deg); */
+
+
+            /* transform:translate(400px, 500px); */
+            /* z-index: 100; */
+            position: relative;
+            /* position:sticky; */
+
+            /* transform: matrix(-1.2, 0, 0, 1, 40, 30.1); */
+            /* transform: matrix3d() */
+        }
+        div{
+            /* z-index: 1000; */
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            position: absolute;
+            transform:translate(100px, -300px);
+        }
+    </style>
+</head>
+<body>
+    <img src="./a2.jpg" alt="">
+    <div></div>
+</body>
+</html>
