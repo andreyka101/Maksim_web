@@ -6,39 +6,61 @@
     <title>Document</title>
     <style>
         body{
+            /* меняем размер body*/
             /* transform: scale(0.5 ,1.6); */
         }
-
-
+        
+        
         img{
             width: 500px;
             border: 5px #000 solid;
-
-
+            
+            
+            /* меняем размер по x и y*/
             /* transform: scale(0.7); */
             /* transform: scale(0.5 ,1.6); */
             transform: scaleZ(5);
             
 
+            /* вращение */
             /* transform: rotate(40deg); */
+
+            /* вращение по осям */
             /* transform: rotateX(290deg); */
             transform: rotateY(290deg);
+
+            /* вращение 3d = (
+            ось вращения X от 0 до 1,
+            ось вращения Y от 0 до 1,
+            ось вращения Z от 0 до 1,
+            градус вращения для осей
+            )*/
             /* transform: rotate3d(0 , 1 , 0.5 , 45deg); */
 
 
+            /* точка вращения */
             transform-origin: top right;
             /* transform-origin: top center; */
             /* transform-origin: 400px 200px; */
 
+
+            /* растягиваем блок */
             /* transform: skew(45deg, 10deg); */
 
 
+            /* меняем координаты */
             /* transform:translate(400px, 500px); */
+
+            /* меняем порядок наложения элементов по оси Z */
             /* z-index: 100; */
+
             position: relative;
             /* position:sticky; */
+            
 
+            /* применяем все выше описанные 2d функции transform используя matrix */
             /* transform: matrix(-1.2, 0, 0, 1, 40, 30.1); */
+            /* применяем все выше описанные 3d функции transform используя matrix3d */
             /* transform: matrix3d() */
         }
         div{
