@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lesson_style_13.css">
+    <style>
+        body{
+            font-size: 26px;
+        }
+        .grid_1{
+            display: grid;
+            grid-template-columns: 200px 10cqi 7vh 7vw;
+            grid-template-rows: 100px 150px 200px;
+            gap: 20px;
+            /* gap: 20px 5px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+        }
+        .grid_1 div{
+            border: 4px #000 solid;
+            background-color: rgb(83, 83, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_1">
+        <div>1</div>
+        <!-- <div style="grid-row: 3; grid-column: 2; background-color: #deb887;">2</div> -->
+        <!-- <div style="grid-row: 3; grid-column: 2 / 4; background-color: #deb887;">2</div> -->
+        <!-- <div style="grid-row: 3; grid-column: 2 / span 3; background-color: #deb887;">2</div> -->
+        <!-- ------ -->
+        <!-- <div style="grid-row: -3; grid-column: 5; background-color: #deb887;">2</div> -->
+        <!-- <div style="grid-row: 3; grid-column: 2 / span 5; background-color: #deb887;">2</div> -->
+        <div>3</div>
+        <div>5</div>
+        <div style="grid-row: span 2;">16</div>
+        <div style="grid-column: span 3;">7</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+    </div>
+
+
+    <div class="grid_2"></div>
+</body>
+</html>
